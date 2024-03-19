@@ -18,6 +18,7 @@ class ContactForm(forms.ModelForm):
 
     def clean(self):
         cleaned_data = self.cleaned_data
+        print(cleaned_data)
 
         self.add_error(
             'first_name',
